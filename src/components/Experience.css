@@ -1,0 +1,31 @@
+.experience-ctn {
+  background-color: rgb(242, 241, 241);
+  padding: 3% 0;
+}
+
+.company-1 {
+  color: #07c107;
+}
+
+.experience-card {
+  box-shadow: 0px 5px 15px rgb(188, 188, 188);
+  border: none;
+}
+
+@media (max-width: 992px) {
+  .col {
+    flex: none !important;
+  }
+  .experience-company-col {
+    order: 1;
+  }
+  .experience-ctn-col {
+    order: 3;
+  }
+
+  .year {
+    display: flex;
+    justify-content: start !important;
+    order: 2;
+  }
+}

@@ -6,6 +6,20 @@
   height: 40vmin;
   pointer-events: none;
 }
+.footers {
+  text-align: center;
+}
+.footer-sty {
+  background-color: rgb(238, 238, 238);
+  border-radius: 0px 0px 30px 30px;
+  padding: 1%;
+  border-top: 1px solid rgb(180, 179, 179);
+}
+
+/* .home-ctn {
+  display: flex;
+  align-self: center;
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

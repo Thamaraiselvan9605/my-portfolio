@@ -1,0 +1,59 @@
+.txt-color {
+  color: rgb(98, 98, 98);
+  font-size: medium;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img img {
+  box-shadow: 24px 28px 24px gray;
+  border-radius: 4%;
+}
+
+.green-dot {
+  color: rgb(7, 160, 7);
+}
+
+.social-icon {
+  font-size: large;
+  padding: 1%;
+  background-color: rgba(202, 202, 202, 0.468);
+  border-radius: 21%;
+  color: black;
+}
+
+.social-icon:hover {
+  background-color: #614fd0;
+  color: white;
+  transition: 2s;
+}
+
+.h-container {
+  padding-top: 12%;
+  padding-bottom: 13.5%;
+}
+
+/* @media (min-width: 993px) {
+  .h-container {
+    padding-top: 12%;
+    padding-bottom: 11%;
+  }
+} */
+
+@media (max-width: 992px) {
+  .home-ctn {
+    flex-direction: column-reverse;
+  }
+
+  .profile-img {
+    margin: 5% 0;
+  }
+}

@@ -1,0 +1,13 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.contact-ctn {
+  background-color: rgb(238, 238, 238);
+}
+
+@media (max-width: 498px) {
+  .mail {
+    font-size: medium;
+  }
+}

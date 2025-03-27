@@ -1,0 +1,146 @@
+.skill-nav-link {
+  text-decoration: none;
+  color: #000 !important;
+  font-weight: 300;
+  border: none;
+  background-color: white;
+}
+
+.skill-nav-link:hover {
+  color: #614fd0 !important;
+}
+
+.skill-active {
+  color: #614fd0 !important;
+}
+
+.skill-card {
+  width: 50%;
+}
+
+.html-card {
+  background-color: #fff6eb;
+  border-color: #f6cc9c;
+  box-shadow: 0px 5px 15px #f6cc9c;
+}
+.css-card {
+  background-color: #ecf8ff;
+  border-color: #badcf2;
+  box-shadow: 0px 5px 15px #a1d6f9;
+}
+.bootstrap-card {
+  background-color: #f0ecff;
+  border-color: #d6cefe;
+  box-shadow: 0px 5px 15px #cfc6fe;
+}
+.javascript-card {
+  background-color: #f9f5cd;
+  border-color: #f6eea3;
+  box-shadow: 0px 5px 15px #f1e9a1;
+}
+.react-card {
+  background-color: #cdf9f7;
+  border-color: #afe0de;
+  box-shadow: 0px 5px 15px #a5dddb;
+}
+.python-card {
+  background-color: #c1e4ff;
+  border-color: #9dcbee;
+  box-shadow: 0px 5px 15px #add9fb;
+}
+.dart-card {
+  background-color: #bdfaf2;
+  border-color: #9adad1;
+  box-shadow: 0px 5px 15px #a1eee4;
+}
+.django-card {
+  background-color: #e2fff1;
+  border-color: #a0cfbc;
+  box-shadow: 0px 5px 15px #9cddc2;
+}
+.flutter-card {
+  background-color: #cdf3fe;
+  border-color: #88c4d6;
+  box-shadow: 0px 5px 15px #99e2f6;
+}
+.sqlite-card {
+  background-color: #d9f4fc;
+  border-color: #88c4d6;
+  box-shadow: 0px 5px 15px #99e2f6;
+}
+
+.sqlite-card div div div img {
+  width: 40% !important;
+}
+
+.firebase-card {
+  background-color: #fff1c6;
+  border-color: #e0d1a4;
+  box-shadow: 0px 5px 15px #f3e4b5;
+}
+.vs-code-card {
+  background-color: #c6d7ff;
+  border-color: #b0bfe3;
+  box-shadow: 0px 5px 15px #c6d7ff;
+}
+.android-studio-card {
+  background-color: #c6ffe5;
+  border-color: #ade3ca;
+  box-shadow: 0px 5px 15px #c6ffe5;
+}
+
+.android-studio-card div div div img {
+  width: 25%;
+}
+
+.github-card {
+  background-color: #c8d2ce;
+  border-color: #b4bbb8;
+  box-shadow: 0px 5px 15px #acb2af;
+}
+.docker-card {
+  background-color: #a9c7f7;
+  border-color: #86a9e1;
+  box-shadow: 0px 5px 15px #9ebcee;
+}
+
+.card-ctn {
+  flex-direction: column;
+}
+
+/* #Backend {
+  transition: 3s;
+} */
+/* 
+@media (min-width: 993px) {
+  .backend-info .row {
+    height: 122px;
+  }
+  .framework-info .row {
+    height: 122px;
+  }
+  .database-info .row {
+    height: 122px;
+  }
+  .ide-info .row {
+    height: 122px;
+  }
+  .version-control-info .row {
+    height: 122px;
+  }
+} */
+
+@media (max-width: 992px) {
+  .skills-sub-head button {
+    font-size: x-small;
+  }
+}
+
+@media (max-width: 555px) {
+  .skill-card {
+    width: 59%;
+  }
+  .card-ctn div h6 {
+    font-size: smaller;
+  }
+}

@@ -1,0 +1,41 @@
+.about-ctn {
+  background-color: rgb(242, 241, 241);
+  padding: 7% 0;
+}
+
+.row .about-col {
+  display: flex;
+  justify-content: center;
+}
+
+.about-img {
+  display: flex;
+  justify-content: center;
+}
+
+.about-img img {
+  box-shadow: -24px 28px 24px grey;
+  /* box-shadow: 24px 28px 24px gray; */
+  border-radius: 4%;
+}
+
+.sub-head {
+  display: flex;
+  justify-content: center;
+  padding: 5px 15px;
+  background-color: rgb(212, 212, 212);
+  border-radius: 50px;
+  height: auto;
+
+  color: rgb(117, 117, 117);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+@media (max-width: 992px) {
+  .about-img {
+    padding: 30px !important;
+  }
+}

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:3000/#Work -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+
+    <!-- Bootstrap CDN -->
+    <link href="./React App_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Scripts -->
+    <!-- Add this to your public/index.html file -->
+    <script src="./React App_files/bootstrap.bundle.min.js.download" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="./React App_files/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./React App_files/css2" rel="stylesheet">
+
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./React App_files/bundle.js.download"></script><style>body {
+  margin: 0;
+  font-family: "Poppins";
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Qsc0JBQXNCO0VBQ3RCOztpQkFFZTtFQUNmLG1DQUFtQztFQUNuQyxrQ0FBa0M7QUFDcEM7O0FBRUE7RUFDRTthQUNXO0FBQ2IiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5IHtcbiAgbWFyZ2luOiAwO1xuICBmb250LWZhbWlseTogXCJQb3BwaW5zXCI7XG4gIC8qIGZvbnQtZmFtaWx5OiAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsIFwiU2Vnb2UgVUlcIiwgXCJSb2JvdG9cIiwgXCJPeHlnZW5cIixcbiAgICBcIlVidW50dVwiLCBcIkNhbnRhcmVsbFwiLCBcIkZpcmEgU2Fuc1wiLCBcIkRyb2lkIFNhbnNcIiwgXCJIZWx2ZXRpY2EgTmV1ZVwiLFxuICAgIHNhbnMtc2VyaWY7ICovXG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xufVxuXG5jb2RlIHtcbiAgZm9udC1mYW1pbHk6IHNvdXJjZS1jb2RlLXBybywgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsIFwiQ291cmllciBOZXdcIixcbiAgICBtb25vc3BhY2U7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* .home-ctn {
+  display: flex;
+  align-self: center;
+} */
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsY0FBYztFQUNkLG9CQUFvQjtBQUN0Qjs7QUFFQTs7O0dBR0c7O0FBRUg7RUFDRTtJQUNFLDRDQUE0QztFQUM5QztBQUNGOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLGlCQUFpQjtFQUNqQixhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsNkJBQTZCO0VBQzdCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRTtJQUNFLHVCQUF1QjtFQUN6QjtFQUNBO0lBQ0UseUJBQXlCO0VBQzNCO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIuQXBwIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uQXBwLWxvZ28ge1xuICBoZWlnaHQ6IDQwdm1pbjtcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG59XG5cbi8qIC5ob21lLWN0biB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLXNlbGY6IGNlbnRlcjtcbn0gKi9cblxuQG1lZGlhIChwcmVmZXJzLXJlZHVjZWQtbW90aW9uOiBuby1wcmVmZXJlbmNlKSB7XG4gIC5BcHAtbG9nbyB7XG4gICAgYW5pbWF0aW9uOiBBcHAtbG9nby1zcGluIGluZmluaXRlIDIwcyBsaW5lYXI7XG4gIH1cbn1cblxuLkFwcC1oZWFkZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjgyYzM0O1xuICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGZvbnQtc2l6ZTogY2FsYygxMHB4ICsgMnZtaW4pO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5BcHAtbGluayB7XG4gIGNvbG9yOiAjNjFkYWZiO1xufVxuXG5Aa2V5ZnJhbWVzIEFwcC1sb2dvLXNwaW4ge1xuICBmcm9tIHtcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgwZGVnKTtcbiAgfVxuICB0byB7XG4gICAgdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTtcbiAgfVxufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff88;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.nav-link {
+  margin-left: 30px;
+  font-weight: 500;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.active {
+  color: #614fd0 !important;
+}
+
+.nav-link:hover {
+  color: #614fd0;
+  transition: 1s;
+}
+
+.cv-btn {
+  display: flex;
+  align-self: center;
+  background-color: black;
+  color: white;
+  padding: 0;
+  height: 5%;
+  margin-left: 30px;
+  font-weight: 500;
+}
+
+.cv-btn:hover {
+  color: #614fd0;
+  transition: 1s;
+}
+
+.down-btn-clicked {
+  color: white !important;
+}
+
+/* small devices */
+.navbar-toggler {
+  border: none;
+}
+
+@media (max-width: 992px) {
+  .nav-link {
+    margin-left: 0px;
+  }
+
+  .cv-btn {
+    display: flex;
+    align-self: self-start;
+    padding: 0px 10px;
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL05hdmJhci5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxnQkFBZ0I7RUFDaEIsTUFBTTtFQUNOLDJCQUEyQjtFQUMzQiwyQkFBMkI7RUFDM0IsYUFBYTtBQUNmOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLGtCQUFrQjtFQUNsQix1QkFBdUI7RUFDdkIsWUFBWTtFQUNaLFVBQVU7RUFDVixVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsdUJBQXVCO0FBQ3pCOztBQUVBLGtCQUFrQjtBQUNsQjtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFO0lBQ0UsZ0JBQWdCO0VBQ2xCOztFQUVBO0lBQ0UsYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixpQkFBaUI7SUFDakIsY0FBYztFQUNoQjtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiLmhlYWRlciB7XHJcbiAgcG9zaXRpb246IHN0aWNreTtcclxuICB0b3A6IDA7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjg4O1xyXG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cigxMHB4KTtcclxuICB6LWluZGV4OiAxMDAwO1xyXG59XHJcblxyXG4ubmF2LWxpbmsge1xyXG4gIG1hcmdpbi1sZWZ0OiAzMHB4O1xyXG4gIGZvbnQtd2VpZ2h0OiA1MDA7XHJcbn1cclxuXHJcbi5uYXZiYXItYnJhbmQge1xyXG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG59XHJcblxyXG4uYWN0aXZlIHtcclxuICBjb2xvcjogIzYxNGZkMCAhaW1wb3J0YW50O1xyXG59XHJcblxyXG4ubmF2LWxpbms6aG92ZXIge1xyXG4gIGNvbG9yOiAjNjE0ZmQwO1xyXG4gIHRyYW5zaXRpb246IDFzO1xyXG59XHJcblxyXG4uY3YtYnRuIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGFsaWduLXNlbGY6IGNlbnRlcjtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcclxuICBjb2xvcjogd2hpdGU7XHJcbiAgcGFkZGluZzogMDtcclxuICBoZWlnaHQ6IDUlO1xyXG4gIG1hcmdpbi1sZWZ0OiAzMHB4O1xyXG4gIGZvbnQtd2VpZ2h0OiA1MDA7XHJcbn1cclxuXHJcbi5jdi1idG46aG92ZXIge1xyXG4gIGNvbG9yOiAjNjE0ZmQwO1xyXG4gIHRyYW5zaXRpb246IDFzO1xyXG59XHJcblxyXG4uZG93bi1idG4tY2xpY2tlZCB7XHJcbiAgY29sb3I6IHdoaXRlICFpbXBvcnRhbnQ7XHJcbn1cclxuXHJcbi8qIHNtYWxsIGRldmljZXMgKi9cclxuLm5hdmJhci10b2dnbGVyIHtcclxuICBib3JkZXI6IG5vbmU7XHJcbn1cclxuXHJcbkBtZWRpYSAobWF4LXdpZHRoOiA5OTJweCkge1xyXG4gIC5uYXYtbGluayB7XHJcbiAgICBtYXJnaW4tbGVmdDogMHB4O1xyXG4gIH1cclxuXHJcbiAgLmN2LWJ0biB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgYWxpZ24tc2VsZjogc2VsZi1zdGFydDtcclxuICAgIHBhZGRpbmc6IDBweCAxMHB4O1xyXG4gICAgbWFyZ2luLWxlZnQ6IDA7XHJcbiAgfVxyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.txt-color {
+  color: rgb(98, 98, 98);
+  font-size: medium;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img img {
+  box-shadow: 24px 28px 24px gray;
+  border-radius: 4%;
+}
+
+.green-dot {
+  color: rgb(7, 160, 7);
+}
+
+.social-icon {
+  font-size: large;
+  padding: 1%;
+  background-color: rgba(202, 202, 202, 0.468);
+  border-radius: 21%;
+  color: black;
+}
+
+.social-icon:hover {
+  background-color: #614fd0;
+  color: white;
+  transition: 2s;
+}
+
+.h-container {
+  padding-top: 12%;
+  padding-bottom: 13.5%;
+}
+
+/* @media (min-width: 993px) {
+  .h-container {
+    padding-top: 12%;
+    padding-bottom: 11%;
+  }
+} */
+
+@media (max-width: 992px) {
+  .home-ctn {
+    flex-direction: column-reverse;
+  }
+
+  .profile-img {
+    margin: 5% 0;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL0hvbWUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usc0JBQXNCO0VBQ3RCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsK0JBQStCO0VBQy9CLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0VBQ1gsNENBQTRDO0VBQzVDLGtCQUFrQjtFQUNsQixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsWUFBWTtFQUNaLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIscUJBQXFCO0FBQ3ZCOztBQUVBOzs7OztHQUtHOztBQUVIO0VBQ0U7SUFDRSw4QkFBOEI7RUFDaEM7O0VBRUE7SUFDRSxZQUFZO0VBQ2Q7QUFDRiIsInNvdXJjZXNDb250ZW50IjpbIi50eHQtY29sb3Ige1xyXG4gIGNvbG9yOiByZ2IoOTgsIDk4LCA5OCk7XHJcbiAgZm9udC1zaXplOiBtZWRpdW07XHJcbn1cclxuXHJcbi5yb3cge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxufVxyXG5cclxuLnByb2ZpbGUtaW1nIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59XHJcblxyXG4ucHJvZmlsZS1pbWcgaW1nIHtcclxuICBib3gtc2hhZG93OiAyNHB4IDI4cHggMjRweCBncmF5O1xyXG4gIGJvcmRlci1yYWRpdXM6IDQlO1xyXG59XHJcblxyXG4uZ3JlZW4tZG90IHtcclxuICBjb2xvcjogcmdiKDcsIDE2MCwgNyk7XHJcbn1cclxuXHJcbi5zb2NpYWwtaWNvbiB7XHJcbiAgZm9udC1zaXplOiBsYXJnZTtcclxuICBwYWRkaW5nOiAxJTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDIwMiwgMjAyLCAyMDIsIDAuNDY4KTtcclxuICBib3JkZXItcmFkaXVzOiAyMSU7XHJcbiAgY29sb3I6IGJsYWNrO1xyXG59XHJcblxyXG4uc29jaWFsLWljb246aG92ZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICM2MTRmZDA7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG4gIHRyYW5zaXRpb246IDJzO1xyXG59XHJcblxyXG4uaC1jb250YWluZXIge1xyXG4gIHBhZGRpbmctdG9wOiAxMiU7XHJcbiAgcGFkZGluZy1ib3R0b206IDEzLjUlO1xyXG59XHJcblxyXG4vKiBAbWVkaWEgKG1pbi13aWR0aDogOTkzcHgpIHtcclxuICAuaC1jb250YWluZXIge1xyXG4gICAgcGFkZGluZy10b3A6IDEyJTtcclxuICAgIHBhZGRpbmctYm90dG9tOiAxMSU7XHJcbiAgfVxyXG59ICovXHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogOTkycHgpIHtcclxuICAuaG9tZS1jdG4ge1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbi1yZXZlcnNlO1xyXG4gIH1cclxuXHJcbiAgLnByb2ZpbGUtaW1nIHtcclxuICAgIG1hcmdpbjogNSUgMDtcclxuICB9XHJcbn1cclxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.about-ctn {
+  background-color: rgb(242, 241, 241);
+  padding: 7% 0;
+}
+
+.row .about-col {
+  display: flex;
+  justify-content: center;
+}
+
+.about-img {
+  display: flex;
+  justify-content: center;
+}
+
+.about-img img {
+  box-shadow: -24px 28px 24px grey;
+  /* box-shadow: 24px 28px 24px gray; */
+  border-radius: 4%;
+}
+
+.sub-head {
+  display: flex;
+  justify-content: center;
+  padding: 5px 15px;
+  background-color: rgb(212, 212, 212);
+  border-radius: 50px;
+  height: auto;
+
+  color: rgb(117, 117, 117);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+@media (max-width: 992px) {
+  .about-img {
+    padding: 30px !important;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL0Fib3V0LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG9DQUFvQztFQUNwQyxhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHVCQUF1QjtBQUN6Qjs7QUFFQTtFQUNFLGdDQUFnQztFQUNoQyxxQ0FBcUM7RUFDckMsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixpQkFBaUI7RUFDakIsb0NBQW9DO0VBQ3BDLG1CQUFtQjtFQUNuQixZQUFZOztFQUVaLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFO0lBQ0Usd0JBQXdCO0VBQzFCO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIuYWJvdXQtY3RuIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjQyLCAyNDEsIDI0MSk7XHJcbiAgcGFkZGluZzogNyUgMDtcclxufVxyXG5cclxuLnJvdyAuYWJvdXQtY29sIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59XHJcblxyXG4uYWJvdXQtaW1nIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59XHJcblxyXG4uYWJvdXQtaW1nIGltZyB7XHJcbiAgYm94LXNoYWRvdzogLTI0cHggMjhweCAyNHB4IGdyZXk7XHJcbiAgLyogYm94LXNoYWRvdzogMjRweCAyOHB4IDI0cHggZ3JheTsgKi9cclxuICBib3JkZXItcmFkaXVzOiA0JTtcclxufVxyXG5cclxuLnN1Yi1oZWFkIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIHBhZGRpbmc6IDVweCAxNXB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMTIsIDIxMiwgMjEyKTtcclxuICBib3JkZXItcmFkaXVzOiA1MHB4O1xyXG4gIGhlaWdodDogYXV0bztcclxuXHJcbiAgY29sb3I6IHJnYigxMTcsIDExNywgMTE3KTtcclxufVxyXG5cclxuLnRleHQtanVzdGlmeSB7XHJcbiAgdGV4dC1hbGlnbjoganVzdGlmeTtcclxufVxyXG5cclxuQG1lZGlhIChtYXgtd2lkdGg6IDk5MnB4KSB7XHJcbiAgLmFib3V0LWltZyB7XHJcbiAgICBwYWRkaW5nOiAzMHB4ICFpbXBvcnRhbnQ7XHJcbiAgfVxyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.skill-nav-link {
+  text-decoration: none;
+  color: #000 !important;
+  font-weight: 300;
+}
+
+.skill-nav-link:hover {
+  color: #614fd0 !important;
+}
+
+.skill-active {
+  color: #614fd0 !important;
+}
+
+.skill-card {
+  width: 50%;
+}
+
+.html-card {
+  background-color: #fff6eb;
+  border-color: #f6cc9c;
+  box-shadow: 0px 5px 15px #f6cc9c;
+}
+.css-card {
+  background-color: #ecf8ff;
+  border-color: #badcf2;
+  box-shadow: 0px 5px 15px #a1d6f9;
+}
+.bootstrap-card {
+  background-color: #f0ecff;
+  border-color: #d6cefe;
+  box-shadow: 0px 5px 15px #cfc6fe;
+}
+.javascript-card {
+  background-color: #f9f5cd;
+  border-color: #f6eea3;
+  box-shadow: 0px 5px 15px #f1e9a1;
+}
+.react-card {
+  background-color: #cdf9f7;
+  border-color: #afe0de;
+  box-shadow: 0px 5px 15px #a5dddb;
+}
+.python-card {
+  background-color: #c1e4ff;
+  border-color: #9dcbee;
+  box-shadow: 0px 5px 15px #add9fb;
+}
+.dart-card {
+  background-color: #bdfaf2;
+  border-color: #9adad1;
+  box-shadow: 0px 5px 15px #a1eee4;
+}
+.django-card {
+  background-color: #e2fff1;
+  border-color: #a0cfbc;
+  box-shadow: 0px 5px 15px #9cddc2;
+}
+.flutter-card {
+  background-color: #cdf3fe;
+  border-color: #88c4d6;
+  box-shadow: 0px 5px 15px #99e2f6;
+}
+.sqlite-card {
+  background-color: #d9f4fc;
+  border-color: #88c4d6;
+  box-shadow: 0px 5px 15px #99e2f6;
+}
+
+.sqlite-card div div div img {
+  width: 40% !important;
+}
+
+.firebase-card {
+  background-color: #fff1c6;
+  border-color: #e0d1a4;
+  box-shadow: 0px 5px 15px #f3e4b5;
+}
+.vs-code-card {
+  background-color: #c6d7ff;
+  border-color: #b0bfe3;
+  box-shadow: 0px 5px 15px #c6d7ff;
+}
+.android-studio-card {
+  background-color: #c6ffe5;
+  border-color: #ade3ca;
+  box-shadow: 0px 5px 15px #c6ffe5;
+}
+
+.android-studio-card div div div img {
+  width: 25%;
+}
+
+.github-card {
+  background-color: #c8d2ce;
+  border-color: #b4bbb8;
+  box-shadow: 0px 5px 15px #acb2af;
+}
+
+.card-ctn {
+  flex-direction: column;
+}
+
+#Backend {
+  transition: 3s;
+}
+/* 
+@media (min-width: 993px) {
+  .backend-info .row {
+    height: 122px;
+  }
+  .framework-info .row {
+    height: 122px;
+  }
+  .database-info .row {
+    height: 122px;
+  }
+  .ide-info .row {
+    height: 122px;
+  }
+  .version-control-info .row {
+    height: 122px;
+  }
+} */
+
+@media (max-width: 992px) {
+  .skills-sub-head a {
+    font-size: x-small;
+  }
+}
+
+@media (max-width: 555px) {
+  .skill-card {
+    width: 59%;
+  }
+  .card-ctn div h6 {
+    font-size: smaller;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL1NraWxscy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsZ0NBQWdDO0FBQ2xDO0FBQ0E7RUFDRSx5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLGdDQUFnQztBQUNsQztBQUNBO0VBQ0UseUJBQXlCO0VBQ3pCLHFCQUFxQjtFQUNyQixnQ0FBZ0M7QUFDbEM7QUFDQTtFQUNFLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsZ0NBQWdDO0FBQ2xDO0FBQ0E7RUFDRSx5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLGdDQUFnQztBQUNsQztBQUNBO0VBQ0UseUJBQXlCO0VBQ3pCLHFCQUFxQjtFQUNyQixnQ0FBZ0M7QUFDbEM7QUFDQTtFQUNFLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsZ0NBQWdDO0FBQ2xDO0FBQ0E7RUFDRSx5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLGdDQUFnQztBQUNsQztBQUNBO0VBQ0UseUJBQXlCO0VBQ3pCLHFCQUFxQjtFQUNyQixnQ0FBZ0M7QUFDbEM7QUFDQTtFQUNFLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsZ0NBQWdDO0FBQ2xDOztBQUVBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLHFCQUFxQjtFQUNyQixnQ0FBZ0M7QUFDbEM7QUFDQTtFQUNFLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsZ0NBQWdDO0FBQ2xDO0FBQ0E7RUFDRSx5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLGdDQUFnQztBQUNsQzs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixxQkFBcUI7RUFDckIsZ0NBQWdDO0FBQ2xDOztBQUVBO0VBQ0Usc0JBQXNCO0FBQ3hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjtBQUNBOzs7Ozs7Ozs7Ozs7Ozs7OztHQWlCRzs7QUFFSDtFQUNFO0lBQ0Usa0JBQWtCO0VBQ3BCO0FBQ0Y7O0FBRUE7RUFDRTtJQUNFLFVBQVU7RUFDWjtFQUNBO0lBQ0Usa0JBQWtCO0VBQ3BCO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIuc2tpbGwtbmF2LWxpbmsge1xyXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICBjb2xvcjogIzAwMCAhaW1wb3J0YW50O1xyXG4gIGZvbnQtd2VpZ2h0OiAzMDA7XHJcbn1cclxuXHJcbi5za2lsbC1uYXYtbGluazpob3ZlciB7XHJcbiAgY29sb3I6ICM2MTRmZDAgIWltcG9ydGFudDtcclxufVxyXG5cclxuLnNraWxsLWFjdGl2ZSB7XHJcbiAgY29sb3I6ICM2MTRmZDAgIWltcG9ydGFudDtcclxufVxyXG5cclxuLnNraWxsLWNhcmQge1xyXG4gIHdpZHRoOiA1MCU7XHJcbn1cclxuXHJcbi5odG1sLWNhcmQge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmY2ZWI7XHJcbiAgYm9yZGVyLWNvbG9yOiAjZjZjYzljO1xyXG4gIGJveC1zaGFkb3c6IDBweCA1cHggMTVweCAjZjZjYzljO1xyXG59XHJcbi5jc3MtY2FyZCB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2VjZjhmZjtcclxuICBib3JkZXItY29sb3I6ICNiYWRjZjI7XHJcbiAgYm94LXNoYWRvdzogMHB4IDVweCAxNXB4ICNhMWQ2Zjk7XHJcbn1cclxuLmJvb3RzdHJhcC1jYXJkIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjBlY2ZmO1xyXG4gIGJvcmRlci1jb2xvcjogI2Q2Y2VmZTtcclxuICBib3gtc2hhZG93OiAwcHggNXB4IDE1cHggI2NmYzZmZTtcclxufVxyXG4uamF2YXNjcmlwdC1jYXJkIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjlmNWNkO1xyXG4gIGJvcmRlci1jb2xvcjogI2Y2ZWVhMztcclxuICBib3gtc2hhZG93OiAwcHggNXB4IDE1cHggI2YxZTlhMTtcclxufVxyXG4ucmVhY3QtY2FyZCB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2NkZjlmNztcclxuICBib3JkZXItY29sb3I6ICNhZmUwZGU7XHJcbiAgYm94LXNoYWRvdzogMHB4IDVweCAxNXB4ICNhNWRkZGI7XHJcbn1cclxuLnB5dGhvbi1jYXJkIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjYzFlNGZmO1xyXG4gIGJvcmRlci1jb2xvcjogIzlkY2JlZTtcclxuICBib3gtc2hhZG93OiAwcHggNXB4IDE1cHggI2FkZDlmYjtcclxufVxyXG4uZGFydC1jYXJkIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjYmRmYWYyO1xyXG4gIGJvcmRlci1jb2xvcjogIzlhZGFkMTtcclxuICBib3gtc2hhZG93OiAwcHggNXB4IDE1cHggI2ExZWVlNDtcclxufVxyXG4uZGphbmdvLWNhcmQge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNlMmZmZjE7XHJcbiAgYm9yZGVyLWNvbG9yOiAjYTBjZmJjO1xyXG4gIGJveC1zaGFkb3c6IDBweCA1cHggMTVweCAjOWNkZGMyO1xyXG59XHJcbi5mbHV0dGVyLWNhcmQge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNjZGYzZmU7XHJcbiAgYm9yZGVyLWNvbG9yOiAjODhjNGQ2O1xyXG4gIGJveC1zaGFkb3c6IDBweCA1cHggMTVweCAjOTllMmY2O1xyXG59XHJcbi5zcWxpdGUtY2FyZCB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2Q5ZjRmYztcclxuICBib3JkZXItY29sb3I6ICM4OGM0ZDY7XHJcbiAgYm94LXNoYWRvdzogMHB4IDVweCAxNXB4ICM5OWUyZjY7XHJcbn1cclxuXHJcbi5zcWxpdGUtY2FyZCBkaXYgZGl2IGRpdiBpbWcge1xyXG4gIHdpZHRoOiA0MCUgIWltcG9ydGFudDtcclxufVxyXG5cclxuLmZpcmViYXNlLWNhcmQge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmYxYzY7XHJcbiAgYm9yZGVyLWNvbG9yOiAjZTBkMWE0O1xyXG4gIGJveC1zaGFkb3c6IDBweCA1cHggMTVweCAjZjNlNGI1O1xyXG59XHJcbi52cy1jb2RlLWNhcmQge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNjNmQ3ZmY7XHJcbiAgYm9yZGVyLWNvbG9yOiAjYjBiZmUzO1xyXG4gIGJveC1zaGFkb3c6IDBweCA1cHggMTVweCAjYzZkN2ZmO1xyXG59XHJcbi5hbmRyb2lkLXN0dWRpby1jYXJkIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjYzZmZmU1O1xyXG4gIGJvcmRlci1jb2xvcjogI2FkZTNjYTtcclxuICBib3gtc2hhZG93OiAwcHggNXB4IDE1cHggI2M2ZmZlNTtcclxufVxyXG5cclxuLmFuZHJvaWQtc3R1ZGlvLWNhcmQgZGl2IGRpdiBkaXYgaW1nIHtcclxuICB3aWR0aDogMjUlO1xyXG59XHJcblxyXG4uZ2l0aHViLWNhcmQge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNjOGQyY2U7XHJcbiAgYm9yZGVyLWNvbG9yOiAjYjRiYmI4O1xyXG4gIGJveC1zaGFkb3c6IDBweCA1cHggMTVweCAjYWNiMmFmO1xyXG59XHJcblxyXG4uY2FyZC1jdG4ge1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbn1cclxuXHJcbiNCYWNrZW5kIHtcclxuICB0cmFuc2l0aW9uOiAzcztcclxufVxyXG4vKiBcclxuQG1lZGlhIChtaW4td2lkdGg6IDk5M3B4KSB7XHJcbiAgLmJhY2tlbmQtaW5mbyAucm93IHtcclxuICAgIGhlaWdodDogMTIycHg7XHJcbiAgfVxyXG4gIC5mcmFtZXdvcmstaW5mbyAucm93IHtcclxuICAgIGhlaWdodDogMTIycHg7XHJcbiAgfVxyXG4gIC5kYXRhYmFzZS1pbmZvIC5yb3cge1xyXG4gICAgaGVpZ2h0OiAxMjJweDtcclxuICB9XHJcbiAgLmlkZS1pbmZvIC5yb3cge1xyXG4gICAgaGVpZ2h0OiAxMjJweDtcclxuICB9XHJcbiAgLnZlcnNpb24tY29udHJvbC1pbmZvIC5yb3cge1xyXG4gICAgaGVpZ2h0OiAxMjJweDtcclxuICB9XHJcbn0gKi9cclxuXHJcbkBtZWRpYSAobWF4LXdpZHRoOiA5OTJweCkge1xyXG4gIC5za2lsbHMtc3ViLWhlYWQgYSB7XHJcbiAgICBmb250LXNpemU6IHgtc21hbGw7XHJcbiAgfVxyXG59XHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogNTU1cHgpIHtcclxuICAuc2tpbGwtY2FyZCB7XHJcbiAgICB3aWR0aDogNTklO1xyXG4gIH1cclxuICAuY2FyZC1jdG4gZGl2IGg2IHtcclxuICAgIGZvbnQtc2l6ZTogc21hbGxlcjtcclxuICB9XHJcbn1cclxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.experience-ctn {
+  background-color: rgb(242, 241, 241);
+  padding: 3% 0;
+}
+
+.company-1 {
+  color: #07c107;
+}
+
+.experience-card {
+  box-shadow: 0px 5px 15px rgb(188, 188, 188);
+  border: none;
+}
+
+@media (max-width: 992px) {
+  .col {
+    flex: none !important;
+  }
+  .experience-company-col {
+    order: 1;
+  }
+  .experience-ctn-col {
+    order: 3;
+  }
+
+  .year {
+    display: flex;
+    justify-content: start !important;
+    order: 2;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL0V4cGVyaWVuY2UuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usb0NBQW9DO0VBQ3BDLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSwyQ0FBMkM7RUFDM0MsWUFBWTtBQUNkOztBQUVBO0VBQ0U7SUFDRSxxQkFBcUI7RUFDdkI7RUFDQTtJQUNFLFFBQVE7RUFDVjtFQUNBO0lBQ0UsUUFBUTtFQUNWOztFQUVBO0lBQ0UsYUFBYTtJQUNiLGlDQUFpQztJQUNqQyxRQUFRO0VBQ1Y7QUFDRiIsInNvdXJjZXNDb250ZW50IjpbIi5leHBlcmllbmNlLWN0biB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI0MiwgMjQxLCAyNDEpO1xyXG4gIHBhZGRpbmc6IDMlIDA7XHJcbn1cclxuXHJcbi5jb21wYW55LTEge1xyXG4gIGNvbG9yOiAjMDdjMTA3O1xyXG59XHJcblxyXG4uZXhwZXJpZW5jZS1jYXJkIHtcclxuICBib3gtc2hhZG93OiAwcHggNXB4IDE1cHggcmdiKDE4OCwgMTg4LCAxODgpO1xyXG4gIGJvcmRlcjogbm9uZTtcclxufVxyXG5cclxuQG1lZGlhIChtYXgtd2lkdGg6IDk5MnB4KSB7XHJcbiAgLmNvbCB7XHJcbiAgICBmbGV4OiBub25lICFpbXBvcnRhbnQ7XHJcbiAgfVxyXG4gIC5leHBlcmllbmNlLWNvbXBhbnktY29sIHtcclxuICAgIG9yZGVyOiAxO1xyXG4gIH1cclxuICAuZXhwZXJpZW5jZS1jdG4tY29sIHtcclxuICAgIG9yZGVyOiAzO1xyXG4gIH1cclxuXHJcbiAgLnllYXIge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogc3RhcnQgIWltcG9ydGFudDtcclxuICAgIG9yZGVyOiAyO1xyXG4gIH1cclxufVxyXG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.card-imgs {
+  background-color: rgb(238, 238, 238);
+}
+
+.skill-highlight {
+  background-color: #504a79;
+  /* background-color: rgb(164, 160, 160); */
+  padding: 2px 15px;
+  border-radius: 20px;
+  color: white;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL1dvcmtzLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG9DQUFvQztBQUN0Qzs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QiwwQ0FBMEM7RUFDMUMsaUJBQWlCO0VBQ2pCLG1CQUFtQjtFQUNuQixZQUFZO0FBQ2QiLCJzb3VyY2VzQ29udGVudCI6WyIuY2FyZC1pbWdzIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjM4LCAyMzgsIDIzOCk7XHJcbn1cclxuXHJcbi5za2lsbC1oaWdobGlnaHQge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICM1MDRhNzk7XHJcbiAgLyogYmFja2dyb3VuZC1jb2xvcjogcmdiKDE2NCwgMTYwLCAxNjApOyAqL1xyXG4gIHBhZGRpbmc6IDJweCAxNXB4O1xyXG4gIGJvcmRlci1yYWRpdXM6IDIwcHg7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="content"><div class="header"><nav class="navbar navbar-expand-lg" id="navbar-scroll"><div class="container"><a class="navbar-brand" href="http://localhost:3000/#">TS</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNavAltMarkup"><div class="navbar-nav ms-auto"><a class="nav-link" href="http://localhost:3000/#Home">Home</a><a class="nav-link" href="http://localhost:3000/#About">About</a><a class="nav-link" href="http://localhost:3000/#Skills">Skills</a><a class="nav-link" href="http://localhost:3000/#Experience">Experience</a><a class="nav-link active" href="http://localhost:3000/#Work">Work</a><a class="nav-link " href="http://localhost:3000/#Contact">Contact</a><a class="btn cv-btn " href="http://localhost:3000/#">Download CV</a></div></div></div></nav></div><div data-bs-spy="scroll" data-bs-target="#navbar-scroll" data-bs-smooth-scroll="true"><div class="container h-container" id="Home"><div class="row home-ctn"><div class="col-lg"><h1>Hi, I'm Thamaraiselvan👋</h1><p class="txt-color text-justify">As a Full Stack Developer specializing in React and Django, I build dynamic, high-performance web applications that deliver seamless user experiences. With expertise in both front-end and back-end development, I develop scalable and secure applications tailored to business needs.</p><br><p class="txt-color"><i class="fa-solid fa-location-dot "></i> &nbsp;Tamilnadu, India</p><p><span class="green-dot">●</span> &nbsp;<span class="txt-color">Eager to Collaborate: Let's Build Something Great!</span></p><p><a href="https://www.linkedin.com/in/selvatsk-k-9605ts96"><i class="fa-brands fa-linkedin social-icon"></i></a>&nbsp; &nbsp;<a href="http://localhost:3000/"><i class="fa-brands fa-github social-icon"></i></a></p></div><div class="col-lg profile-img"><img alt="My-Profile-Img" width="50%" src="./React App_files/images.jfif"></div></div></div><div class="h-container about-ctn" id="About"><div class="container "><div class="row"><div class="col-lg about-col"><h6 class="sub-head">About me</h6></div></div><div class="row about-second-row"><div class="col-lg about-img"><img alt="About-Img" width="50%" height="30%" src="./React App_files/about.jfif"></div><div class="col-lg">&nbsp;<h4 class="text-center">Crusius about me? Here you have it:</h4>&nbsp;<p class="text-justify txt-color">I am a passionate Full Stack Developer with over two years of experience in building dynamic and responsive web applications. My expertise lies in front-end technologies like HTML, CSS, Bootstrap, and JavaScript, complemented by strong back-end skills in Python and the Django framework. I have successfully deployed projects on Google Cloud, showcasing my ability to manage end-to-end development and deployment processes.</p><p class="text-justify  txt-color">In addition to web development, I have six months of experience in mobile application development using Flutter, enabling me to create seamless cross-platform apps. Currently, I am working on a full-stack project leveraging React for the front end and Django for the back end, further enhancing my proficiency in modern frameworks.</p><p class="text-justify txt-color">I am driven by a commitment to delivering efficient, scalable solutions and continuously expanding my technical skill set. Whether it's crafting intuitive user interfaces or architecting robust server-side logic, I thrive on turning ideas into impactful digital experiences.</p></div></div></div></div><div class="h-container skills-ctn" id="Skills"><div class="container"><div class="row"><div class="col-lg about-col"><h6 class="sub-head">Skills</h6></div></div><div class="row"><div class="col-lg d-flex justify-content-center"><p class="txt-color text-center">The skills, tools and technologies I am really at:</p></div></div><div class="row"><div class="col-lg skills-sub-head d-flex justify-content-evenly"><a href="http://localhost:3000/#Frontend" class="skill-nav-link skill-active">Frontend</a><a href="http://localhost:3000/#Backend" class="skill-nav-link ">Backend</a><a href="http://localhost:3000/#Frameworks" class="skill-nav-link ">Frameworks</a><a href="http://localhost:3000/#Database" class="skill-nav-link ">Database</a><a href="http://localhost:3000/#IDE" class="skill-nav-link ">IDE</a><a href="http://localhost:3000/#Version%20Control" class="skill-nav-link ">Version Control</a></div></div><div class="row"><div class="frontend-info" id="Frontend"><div class="row my-5 mx-0 d-flex justify-content-center"><div class="col-6 col-md-4 col-lg mb-3 d-flex justify-content-center"><div class="card skill-card html-card"><div class="card-body d-flex justify-content-center"><div class="row row-gap-3 card-ctn"><div class="col d-flex justify-content-center"><img alt="HTML-logo" width="30%" src="./React App_files/html-1.svg"></div><div class="col d-flex justify-content-center"><h6>HTML</h6></div></div></div></div></div><div class="col-6 col-md-4 col-lg mb-3 d-flex justify-content-center"><div class="card skill-card css-card"><div class="card-body d-flex justify-content-center"><div class="row row-gap-3 card-ctn"><div class="col d-flex justify-content-center"><img alt="CSS-logo" width="30%" src="./React App_files/css-3.svg"></div><div class="col d-flex justify-content-center"><h6>CSS</h6></div></div></div></div></div><div class="col-6 col-md-4 col-lg mb-3 d-flex justify-content-center"><div class="card skill-card bootstrap-card"><div class="card-body d-flex justify-content-center"><div class="row row-gap-3 card-ctn"><div class="col d-flex justify-content-center"><img alt="Bootstrap-logo" width="30%" src="./React App_files/bootstrap-5-1.svg"></div><div class="col d-flex justify-content-center"><h6>Bootstrap</h6></div></div></div></div></div><div class="col-6 col-md-4 col-lg mb-3 d-flex justify-content-center"><div class="card skill-card javascript-card"><div class="card-body d-flex justify-content-center"><div class="row row-gap-3 card-ctn"><div class="col d-flex justify-content-center"><img alt="JavaScript-logo" width="30%" src="./React App_files/logo-javascript.svg"></div><div class="col d-flex justify-content-center"><h6>JavaScript</h6></div></div></div></div></div><div class="col-6 col-md-4 col-lg mb-3 d-flex justify-content-center"><div class="card skill-card react-card"><div class="card-body d-flex justify-content-center"><div class="row row-gap-3 card-ctn"><div class="col d-flex justify-content-center"><img alt="React-logo" width="30%" src="./React App_files/react-2.svg"></div><div class="col d-flex justify-content-center"><h6>React</h6></div></div></div></div></div></div></div></div></div></div><div class="experience-ctn" id="Experience"><div class="container"><div class="row "><div class="col-lg about-col"><h6 class="sub-head">Experience</h6></div></div><div class="row"><div class="col-lg d-flex justify-content-center"><p class="txt-color text-center">Here is a quick summary of my recent experience:</p></div></div><div class="row"><div class="col"><div class="card experience-card p-3 my-2"><div class="card-body"><div class="row d-flex align-items-start"><div class="col experience-company-col"><h5 class="company-1">Nibuna Tech Solutions</h5><p class="text-muted">Erode | Tamilnadu</p></div><div class="col experience-ctn-col"><h5>Web Developer</h5><ul class="txt-color"><li class="pb-1">Over 2 years of experience in Django, Python, HTML, CSS, Bootstrap, JavaScript, Firebase, Flutter, and Dart.</li><li class="pb-1">Expertise in developing 3-layered architecture applications and creating RESTful APIs for seamless data communication.</li><li class="pb-1">Skilled in implementing middleware for authorization and validation processes.</li><li class="pb-1">Proficient in managing dependencies using Python Package Manager (PIP) and version control with Git.</li><li class="pb-1">Hands-on experience with Docker for containerization and deployment.</li><li class="pb-1">Proficient in working with IDEs like Visual Studio Code and Android Studio.</li><li>Detail-oriented team player with strong analytical and problem-solving skills.</li></ul></div><div class="col d-flex justify-content-end year"><p class="text-muted">Jan 2023 - Jan 2025</p></div></div></div></div></div></div></div></div><div class="h-container works-ctn" id="Work"><div class="container"><div class="row"><div class="col-lg about-col"><h6 class="sub-head">Works</h6></div></div><div class="row"><div class="col-lg d-flex justify-content-center"><p class="txt-color text-center">Some of the noteworthy projects I have built:</p></div></div><div class="row"><div class="card experience-card my-3 "><div class="row"><div class="col-5 card-imgs  d-flex justify-content-center"><img width="60%" alt="My Portfolio" src="./React App_files/about.jfif"></div><div class="col-7"><div class="row work-card-content"><div class="col px-4"><h4>My Portfolio</h4><p class="text-justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolore delectus vel eligendi velit corrupti alias. Soluta alias molestiae enim quasi accusamus qui fugit illum neque officia. Blanditiis, officia voluptate.</p><h6>Technology used:</h6><div class="row row-gap-3 my-3 mx-0"><div class="col"><span class="skill-highlight ">HTML</span></div><div class="col"><span class="skill-highlight ">CSS</span></div><div class="col"><span class="skill-highlight ">Bootstrap</span></div><div class="col"><span class="skill-highlight ">JavaScript</span></div><div class="col"><span class="skill-highlight ">React</span></div><div class="col"><span class="skill-highlight ">Python</span></div><div class="col"><span class="skill-highlight ">Django</span></div><div class="col"><span class="skill-highlight ">Docker</span></div><div class="col"><span class="skill-highlight ">Sqlite</span></div></div></div></div></div></div></div><div class="card experience-card my-3 "><div class="row py-5 "><div class="col-5  card-imgs d-flex justify-content-center" style="
+"><img width="60%" alt="My Portfolio" src="./React App_files/about.jfif"></div><div class="col-7"><div class="row work-card-content"><div class="col px-4"><h4>Stock Chitta Web Application</h4><p class="text-justify">Stock Chitta Admin Panel is designed to manage mobile app user details efficiently. Admins can control user access and enable or disable payment notifications. It allows monitoring of new users and tracking their activities. The panel provides real-time insights and management tools. Admins can also export data to Excel for reporting and analysis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolore delectus vel eligendi velit corrupti alias. Soluta alias molestiae enim quasi accusamus qui fugit illum neque officia. Blanditiis, officia voluptate.</p><h6>Technology used:</h6><div class="row row-gap-3 my-3 mx-0"><div class="col"><span class="skill-highlight ">HTML</span></div><div class="col"><span class="skill-highlight ">CSS</span></div><div class="col"><span class="skill-highlight ">Bootstrap</span></div><div class="col"><span class="skill-highlight ">JavaScript</span></div><div class="col"><span class="skill-highlight ">Python</span></div><div class="col"><span class="skill-highlight ">Django</span></div><div class="col"><span class="skill-highlight ">Docker</span></div><div class="col"><span class="skill-highlight ">Firebase</span></div><div class="col"><span class="skill-highlight ">Google Cloud</span></div></div></div></div></div></div></div></div></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>
