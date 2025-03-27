@@ -16,10 +16,7 @@
   border-top: 1px solid rgb(180, 179, 179);
 }
 
-/* .home-ctn {
-  display: flex;
-  align-self: center;
-} */
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
